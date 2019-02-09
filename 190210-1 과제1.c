@@ -1,3 +1,5 @@
+// 1~100까지의 자연수의 제곱의 합을 출력
+
 #include<stdio.h>
 #include<conio.h>
 int main()
