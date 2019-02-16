@@ -3,25 +3,36 @@
 
 float sqrt(float x)
 {
-    float y = 0.5 * x;
-    int i;
-    for(i = 0; i < 10; i++)
+    if (x >= 0)
     {
-        y = 0.5*(y + x / y);
+        float y = 0.5 * x;
+        int i;
+        for(i = 0; i < 10; i++)
+        {
+            y = 0.5*(y + x / y);
+        }
+        return y;
     }
-    return y;
+
+    else if (x < 0)
+    {
+        float i = i;
+        float y = (-1)*x*i;
+        return y;
+    }
 }
 
 void solveQuadratic(float a, float b, float c)
-{    
-    -b+sqrt(b*b-4*a*c))/2*a
-    printf("%d")
-    //printf를 이용하여 근 출력
+{
+    float k;
+    float l;
+    k = (-b + sqrt(b*b-4*a*c))/2*a;
+    l = (-b - sqrt(b*b-4*a*c))/2*a;
+    printf("%f, %f", k, l);
 }
 
 int main()
 {
-    solveQuadratic(a, b, c)
-    printf("%d");
+    solveQuadratic(1,2,5);
     getch();
 }
