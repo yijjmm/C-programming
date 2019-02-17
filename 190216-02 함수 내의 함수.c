@@ -12,6 +12,6 @@ int abc(int n)
 
 int main()
 {
-    abc(3);
+    printf("%d", abc(3));
     getch();
 }
